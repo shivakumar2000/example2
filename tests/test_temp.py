@@ -2,10 +2,10 @@ import pytest
 import temp
 
 def test_temperature():
-  assert type(temp) == int
-  assert temp > 50
+  assert type(temp.temp) == int
+  assert temp.temp > 50
   
 def test_humidity():
-  assert type(humidity) == int
-  assert humidity > 100
+  assert type(temp.humidity) == int
+  assert temp.humidity > 100
   
