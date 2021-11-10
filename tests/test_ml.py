@@ -1,5 +1,4 @@
-from src import ml
-import unittest
+from src.ml import *
 
 def test_median():
     assert ml.func1() == 86.5
