@@ -1,31 +1,17 @@
 import time  # for delay functions
-import pytest
+temp = 0
+humidity = 0
 
-print("Enter 1 to 100")
-while 1:  # Do this in loop
-    print("Enter Temperature_Value")
-    temp = input()# get input from user
-    print("Enter Humidity_Value")
-    humidity = input()  # get input from user
+def get_temperature():
+    global temp
+    print("Enter Temperature : ")
+    temp = input()
+    return temp
+def get_humidity():
+    global humidity
+    print("Enter Humidity : ")
+    humidity = input()
+    return humidity
 
-    assert type(temp) == int
-    assert temp > 50
-    assert type(humidity) == int
-    assert humidity > 100
-        
-    print("Temperature = "+str(temp)+", Humidity = "+str(humidity))
-    if (temp >= '20'):  # if the value is 1
-        #arduino.write('1')  # send 1
-        print("Temperature High")
-    else:
-        print("Temperature Low")
-        time.sleep(1)
-
-    if (humidity >= '50'):  # if the value is 0
-        #arduino.write('0')  # send 0
-        print("Humidity Low")
-    else:
-        print("Humidity High")
-
-        time.sleep(1)
-
+print("The Temperature is : ", temp)
+print("The humidity is : ", humidity)
