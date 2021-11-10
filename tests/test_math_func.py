@@ -1,4 +1,4 @@
-from math_func import studentDB
+from src.math_func import studentDB
 #import pytest
 
 def setup_module(module):
