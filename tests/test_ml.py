@@ -1,4 +1,4 @@
-from src.ml import *
+from src import ml
 
 def test_median():
     assert ml.func1() == 86.5
