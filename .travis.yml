@@ -3,6 +3,6 @@ python:
  - "3.7"
 install:
  - pip install -r requirements.txt
+ - pip install -U pytest
 script:
- - python -m unittest tests.test_ml
- - pytest
+ - pytest test_ml.py
