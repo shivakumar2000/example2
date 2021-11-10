@@ -1,4 +1,4 @@
-import arima
+import src.arima
 
 def test_size():
     assert arima.size == 23
